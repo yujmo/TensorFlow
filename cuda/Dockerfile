@@ -7,5 +7,7 @@ WORKDIR /
 ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get upgrade -y \
-    && apt-get install python python-pip python3 python3-pip -y \
-    && pip3 install pycuda
+    && apt-get install python python-pip python3 python3-pip wget -y \
+    && pip3 install pycuda \
+    && wget https://github.com/inducer/pycuda/archive/master.zip \
+    && unzip master.zip
