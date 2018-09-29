@@ -1,4 +1,4 @@
-FROM nvidia/cude:10.0-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:10.0-cudnn7-runtime-ubuntu16.04
 
 MAINTAINER yujmo yujmo94@gmail.com
 
