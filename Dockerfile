@@ -7,5 +7,5 @@ WORKDIR /
 ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get upgrade -y \
-    && apt-get install python python-pip python3 python3-pip \
+    && apt-get install python python-pip python3 python3-pip -y \
     && pip3 install tensorflow-gpu
